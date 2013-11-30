@@ -1,0 +1,119 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="author" content="Maximilian Mackh" />
+<title>Clear Read: Like Instapaper, but for Developers</title>
+<script type="text/javascript">
+/* <![CDATA[ */
+    (function() {
+        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+        t.parentNode.insertBefore(s, t);
+    })();
+/* ]]> */</script>
+</head>
+<body style="font-family:Arial; background-color:#F5F5F5; padding-bottom:50px;">
+<div style="margin-top:75px; margin-left:auto;
+margin-right:auto; max-width:700px;">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-5713939685226475";
+/* Clear Read API */
+google_ad_slot = "0837335833";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<h1>Clear Read API</h1>
+<h5>3,5 Million extractions and counting!</h5>
+<div>
+<p>This is the first stable release of <u>Clear Read API</u>. Clear Read is a service for extracting article text and metadata from a URL. The API takes any article URL as an input and turns it into a full-text XML feed that can be integrated into a third party application. Along with the article text, Clear Read pulls out metadata such as title, description and link. The API uses RESTful calls and responses are formatted in XML and JSON.<br /> <small style="float:right;">- worded by <a href="http://www.programmableweb.com/api/clear-read">programmableweb.com</a></small>
+</br></br>
+<small><a href="http://news.ycombinator.com/item?id=3646627">Join the Discussion on Hacker News</a></small>
+<hr style="color:#CCC; margin-bottom:-30px;" />
+</br></br>
+<h3><u>What?</u></h3>
+<p>Turns the following <b>URL</b> into a Full-Text XML/JSON <b>Response</b>:<p>
+<code><b>URL:</b> http://blogs.balsamiq.com/product/2012/02/27/uxstackexchange/</code>
+</br></br>
+<code><b>Response:</b></br>
+&lt;rss></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;channel></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;status><i>success</i>&lt;/status></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;item></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title>Balsamiq ❤ UX.StackExchange.com | Mockups Product Blog&lt;/title></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;description><i>Full Article Text (in encoded HTML)</i>&lt;/description></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link><i>http://blogs.balsamiq.com/product/2012/02/27/uxstackexchange/</i>&lt;/link></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/item></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/channel></br>
+&lt;/rss>
+</code>
+<h3><u>How?</u></h3>
+<code><b>Point your App here:</b> http://api.thequeue.org/v1/clear?url=[ArticleURL]&format=[xml/json]<br /><br /><b>Important: </b>The url query must always come first.</code>
+</br>
+<p>
+<code><b>XML:</b> <a href="http://api.thequeue.org/v1/clear?url=http://blogs.balsamiq.com/product/2012/02/27/uxstackexchange/&format=xml">http://api.thequeue.org/v1/clear?url=http://blogs.balsamiq.com/product/2012/02/27/uxstackexchange/&format=xml</a></code>
+</p>
+<p>
+<code><b>JSON:</b> <a href="http://api.thequeue.org/v1/clear?url=http://blogs.balsamiq.com/product/2012/02/27/uxstackexchange/&format=json">http://api.thequeue.org/v1/clear?url=http://blogs.balsamiq.com/product/2012/02/27/uxstackexchange/&format=json</a></code>
+</p>
+<h3><u>Limits?</u></h3>
+<p>None*. <strike>I <i>may</i> add keys in the future.</strike> As long as you don't crawl the entire web with this API, feel free to use it.<br /><br /><small> *Once again, DO NOT crawl the web with this API.</small></p>
+<p><b>Premium Status</b>: If you enjoy using Clear Read, please consider giving a donation through PayPal or Flattr. Any donations above $10/month will get you Premium Status and I'll do my best to prioritise your support requests.</p>
+<h3><u>Who?</u></h3>
+<p>For any Support or issues please let me know on <a href="http://twitter.com/mmackh">Twitter (@mmackh)</a> or via <a href="mailto:status@thequeue.org">Email</a>.</p>
+<h3><u>Updates?</u></h3>
+
+<p><b>10/27/12</b>: Major new feature: now stripping every inline tag except the essentials (href, alt, title, etc). Added new extraction patterns. Other minor fixes to the code.<br /></p>
+
+<p><b>9/28/12</b>: Added Google Ad onto the homepage to pay for hosting. This isn't and will not be affecting API endpoints.<br /></p>
+
+<p><b>9/7/12</b>: Various bug fixes: Improved reliability, better and more extraction patterns, can now handle AJAX blogs from Google and more.<br /></p>
+
+<p><b>7/18/12</b>: Fixed bug that affected the extraction of some URLs.<br /></p>
+
+<p><b>7/17/12</b>: Introducing the Toolbox. In case the extraction failed or you need to clear Clear Read's Cache on a particular URL, be sure to visit: <a href="toolbox">Toolbox</a>. Additional fixes: script removal, cleaner html output and inline css stripping.<br /></p>
+
+<p><b>5/1/12</b>: Fixed Wikipedia extraction. Clarified usage limits.
+<br />
+</p>
+<p><b>5/30/12</b>: Complete <i>under the hood</i> rewrite. Invalid URL error has been removed, the only error will now get, is if your parameters are incorrect. I've also made some caching tweaks, improved extraction reliability and javascript removal. Bug related to JSON &amp; XML conversion difference should now be solved. Let me know if you run into anything unusual.
+<br />
+</p>
+<p><b>4/28/12</b>: Over a Million Pages extracted since Clear Read API was launched 2 months ago.
+</p>
+</div>
+</div>
+<div id="banner" style="position:absolute;
+	width:100%;
+	height:40px;
+	top: 0px;
+	display: block;
+	left: 0px;
+	background: #333 url(img/banner-bg.png);">
+	<div id="notification" style="color:#F5F5F5;
+	font-size: 15px;
+	text-align: center;
+	line-height:40px;">Developers using Clear Read API: Check out the <a style="color:#F5F5F5" href="thanks">App Directory</a></div>
+</div>
+</br>
+<center color:#CCCCCC">
+<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<form style="display:inline; margin-right:15px;" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="https://flattr.com/profile/mmackh"></a>
+<noscript><a href="http://flattr.com/thing/707237/mmackh-on-Flattr" target="_blank">
+<img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></noscript>
+</center>
+</body>
+</html>
