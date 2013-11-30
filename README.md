@@ -10,9 +10,9 @@ Clear Read is a service for extracting article text and metadata from a URL. The
 ###Setup:
 
 - Extract the files to your directory
-- Create a new folder: 'buffer'
+- Create a new folder: ```buffer```
 - Install Full-Text RSS to your server
-- Point the '$makefultextfeedURL' in 'functions.php' to the correct Full-Text RSS installation
+- Point the ```$makefultextfeedURL``` in ```functions.php``` to the correct Full-Text RSS installation
 
 ###License
 
